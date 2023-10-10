@@ -1,0 +1,42 @@
+/********************************************************************************/
+/**    File Name: TIMER1.h                                                         */
+/**                                                                             */
+/**  Description: Implementation of the TIMER1 contain configuration for the module*/
+/**-----------------------------------------------------------------------------*/
+/**  CODING LANGUAGE :  C                                                       */
+/**  TARGET          :  Atmega 32                                               */
+/**-----------------------------------------------------------------------------*/
+/**               C O P Y R I G H T                                             */
+/**-----------------------------------------------------------------------------*/
+/** Copyright (c) 2022 by ITI .       All rights reserved.                      */
+/**                                                                             */
+/** This software is copyright protected and proprietary                        */
+/** to ITI.                                                                     */
+/**-----------------------------------------------------------------------------*/
+/**               A U T H O R   I D E N T I T Y                                 */
+/**-----------------------------------------------------------------------------*/
+/** ShortName    Name                      Company                              */
+/** --------     ---------------------     -------------------------------------*/
+/** SaraH     Sara Hossny         ITI.                                       */
+/**-----------------------------------------------------------------------------*/
+/**               R E V I S I O N   H I S T O R Y                               */
+/**-----------------------------------------------------------------------------*/
+/** Date        Version   Author       Description                              */
+/** ----------  --------  ------      ------------------------------------------*/
+/** 1/9/2022   0.1      SaraH     Initial Creation                             */
+ 
+/********************************************************************************/
+#ifndef TIM1_H
+#define TIM1_H
+
+void TIM1_voidInit(void);
+void TIM1_voidEnableOVFIntterrupt(void);
+void TIM1_voidDisableOVFIntterrupt(void);
+void TIM1_voidEnableCTCIntterrupt(void);
+void TIM1_voidDisableCTCIntterrupt(void);
+void TIM1_voidSetOvfCallback(pf pfOvfCallbackCpy);
+void TIM1_voidSetCtcCallback(pf pfCtcCallbackCpy);
+void TIM1_voidDelayMs(uint16 u16DalayTimeCpy);
+void TIM1_voidDelayus(uint16 u16DalayTimeCpy);
+
+#endif
