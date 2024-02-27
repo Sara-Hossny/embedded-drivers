@@ -9,8 +9,8 @@
 #define  SysTick_timer_H
 #include "STD_Types.h"
 typedef enum {
-Enable,
-Disable
+Disable,
+Enable
 }state;
 typedef enum {
 AHB_div_8,
